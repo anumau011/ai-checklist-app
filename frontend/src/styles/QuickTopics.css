@@ -1,0 +1,23 @@
+.quick-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.quick-chip {
+  padding: 6px 14px;
+  background: var(--color-background-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.quick-chip:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-bg);
+}

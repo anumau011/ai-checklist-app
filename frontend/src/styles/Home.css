@@ -1,0 +1,85 @@
+.home-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.home-intro {
+  margin-bottom: 36px;
+}
+
+.home-top {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.home-top h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.home-top p {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.topic-box {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.topic-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.topic-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: var(--radius);
+  font-size: 15px;
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  font-family: inherit;
+}
+
+.topic-input:focus {
+  outline: none;
+  border-color: var(--green);
+  background: var(--color-background-primary);
+}
+
+.quick-topics-section {
+  margin-top: 16px;
+}
+
+.quick-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.quick-chip {
+  padding: 6px 14px;
+  background: var(--color-background-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.quick-chip:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-bg);
+}

@@ -1,0 +1,141 @@
+.section-card {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.sec-head {
+  padding: 12px 14px;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: var(--color-background-secondary);
+}
+
+.sec-title {
+  font-size: 13px;
+  font-weight: 500;
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-family: inherit;
+  cursor: text;
+}
+
+.sec-title:focus {
+  outline: none;
+}
+
+.sec-count {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  background: var(--color-background-tertiary);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.sec-body {
+  padding: 10px 14px;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 0;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+}
+
+.item-row:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--color-border-secondary);
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  background: transparent;
+}
+
+.checkbox.done {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.checkbox.done::after {
+  content: '✓';
+  font-size: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.item-label {
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.4;
+  border: none;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-family: inherit;
+  cursor: text;
+}
+
+.item-label:focus {
+  outline: none;
+}
+
+.item-label.done {
+  color: var(--color-text-tertiary);
+  text-decoration: line-through;
+}
+
+.add-item-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 0.5px solid var(--color-border-tertiary);
+}
+
+.add-item-input {
+  flex: 1;
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--radius);
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  font-family: inherit;
+}
+
+.add-item-input:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+.add-item-btn {
+  width: 28px;
+  height: 28px;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
